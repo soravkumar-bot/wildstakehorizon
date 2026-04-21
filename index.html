@@ -1,161 +1,156 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
-</style>    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WildStake Horizon | Explore Nature Across Eurasia</title>
-      <style>   
-        /* Reset some basic styles */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            height: 100%;
-            overflow-x: hidden;
-        }
-
-        /* Background sections */
-        .background-section {
-            height: 100vh; /* Full viewport height */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-
-        /* Overlay for background sections */
-        .background-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: 1;
-        }
-        /* Container for the age verification page, fixed in place */
-        .age-verification-container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 500px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-            background-color: white;
-            text-align: center;
-            padding: 20px;
-            z-index: 2; /* Ensure the container is above the overlay */
-        }
-
-        .logo {
-            max-width: 150px;
-            margin-bottom: 5px;
-        }
-
-        .content h1 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #000;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .btn {
-            background-color: #0081a1;
-            color: rgb(255, 255, 255);
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 700;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0b00a1;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive styling */
-        @media (max-width: 480px) {
-            .age-verification-container {
-                width: 300px;
-                height: 300px;
-            }
-
-            .logo {
-                max-width: 100px;
-            }
-
-            .content h1 {
-                font-size: 15px;
-            }
-
-            .content p {
-                font-size: 0.9rem;
-            }
-
-            .btn {
-                padding: 8px 15px;
-                font-size: 0.9rem;
-            }
-              
-        }
-    </style>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WildStake Horizon | Explore Nature Across Eurasia</title>
+<meta name="description" content="Discover mountains, forests, lakes and remote landscapes across Russia, Central Asia and the Caucasus. Travel inspiration, outdoor guides and nature exploration.">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
 </head>
-<body cz-shortcut-listen="true">
-    <!-- Fixed age verification container -->
-    <div class="age-verification-container">
-        <div class="content">
-           
-            <h1>Age Verification</h1>
-            <p>You must be 18 or older to enter this site.</p>
-            <div class="buttons">
-                <a href="http://megaplayarena.site/?utm_campaign=WFhrhtZ4Ep&v1=[v1]&v2=[v2]&v3=[v3]" class="btn enter">I am 18 or Older</a>
-                <a href="http://megaplayarena.site/?utm_campaign=WFhrhtZ4Ep&v1=[v1]&v2=[v2]&v3=[v3]" class="btn exit">I am Under 18</a>
-            </div>
-        </div>
-    </div>
 
-    <!-- First background section -->
-    <div id="section1" class="background-section"></div>
+<body>
 
-    <!-- Second background section -->
-    <div id="section2" class="background-section"></div>
+<header>
+<div class="logo">WildStake Horizon</div>
+<nav id="nav">
+<a href="index.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="activities.html">Activities</a>
+<a href="wildlife.html">Wildlife</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
 
-    <!-- Third background section -->
-    <div id="section3" class="background-section"></div>
-</body></html>
+<!-- HERO -->
+<section class="hero">
+<h1>Beyond Borders. Beyond Limits.</h1>
+<p>WildStake Horizon explores the vast natural beauty of Eurasia — from silent mountain valleys to endless steppes and crystal alpine lakes.</p>
+<a href="#explore" class="btn">Explore Now</a>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+<h2>Discover the Untouched World</h2>
+<p>
+WildStake Horizon is a nature-focused platform dedicated to exploring breathtaking landscapes across Russia, Kazakhstan, Georgia, Armenia, Uzbekistan, Kyrgyzstan and surrounding regions.
+We highlight authentic outdoor experiences, scenic environments and peaceful escapes away from crowded destinations.
+</p>
+
+<p>
+Whether you’re drawn to dramatic mountain peaks, expansive grasslands, dense forests or serene lakes, our guides provide inspiration for discovering the raw beauty of Eurasia.
+</p>
+</section>
+
+<!-- FEATURE GRID -->
+<section id="explore" class="cards">
+<div class="card">
+<h3>Mountain Escapes</h3>
+<p>Explore the Caucasus, Altai and Tian Shan ranges featuring dramatic cliffs, glaciers and panoramic hiking routes.</p>
+</div>
+
+<div class="card">
+<h3>Hidden Waterways</h3>
+<p>From Lake Issyk-Kul to remote Siberian rivers, experience tranquil waters surrounded by untouched landscapes.</p>
+</div>
+
+<div class="card">
+<h3>Open Steppe Horizons</h3>
+<p>Witness the beauty of vast open plains where sky meets earth in Kazakhstan and Central Asia.</p>
+</div>
+</section>
+
+<!-- SEASONAL SECTION -->
+<section class="section">
+<h2>Seasonal Exploration</h2>
+<p>
+Each season transforms Eurasian nature into something remarkable.
+</p>
+
+<p>
+Winter brings snow-covered valleys and frozen lakes.  
+Spring awakens mountain flowers and wildlife.  
+Summer reveals green alpine meadows and clear hiking paths.  
+Autumn paints forests in golden and crimson shades.
+</p>
+
+<p>
+WildStake Horizon captures every season’s unique character and atmosphere.
+</p>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section class="section">
+<h2>Experience Nature with Purpose</h2>
+<p>
+Our mission is to promote responsible outdoor exploration. We encourage respect for natural ecosystems, sustainable travel habits and mindful experiences in remote environments.
+</p>
+
+<p>
+Nature is not just scenery — it is energy, balance and perspective. WildStake Horizon exists to share that perspective with explorers across the world.
+</p>
+</section>
+
+<!-- STATS SECTION -->
+<section class="cards">
+<div class="card">
+<h3>12+ Regions Covered</h3>
+<p>From Eastern Europe to Central Asia, our coverage spans diverse landscapes.</p>
+</div>
+
+<div class="card">
+<h3>4 Seasons of Inspiration</h3>
+<p>Every season reveals a different natural story waiting to be discovered.</p>
+</div>
+
+<div class="card">
+<h3>Limitless Horizons</h3>
+<p>Wide open spaces and peaceful environments create unforgettable experiences.</p>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section">
+<h2>Stay Inspired</h2>
+<p>Receive seasonal nature highlights and destination inspiration directly to your inbox.</p>
+
+<form class="newsletter">
+<input type="email" placeholder="Enter your email">
+<button type="submit" class="btn">Subscribe</button>
+</form>
+</section>
+
+<footer>
+<div class="footer-content">
+
+<div class="footer-brand">
+<h3>WildStake Horizon</h3>
+<p>Exploring natural landscapes across Eurasia with responsibility and respect.</p>
+</div>
+
+<div class="footer-links">
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="activities.html">Activities</a>
+<a href="wildlife.html">Wildlife</a>
+</div>
+
+<div class="footer-legal">
+<h4>Legal</h4>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-conditions.html">Terms & Conditions</a>
+<a href="cookie-policy.html">Cookie Policy</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 WildStake Horizon. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
